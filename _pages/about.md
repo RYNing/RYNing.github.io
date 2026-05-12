@@ -22,8 +22,8 @@ Research in Sunnyvale, CA.
 
 <div class="interest-tags">
   <span>Autonomous Driving</span>
+  <span>Vision-Language-Action Models</span>
   <span>Data Efficiency</span>
-  <span>Trajectory Prediction</span>
 </div>
 
 <style>
