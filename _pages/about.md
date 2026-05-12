@@ -118,6 +118,14 @@ h2[id] {
   color: #555;
   margin-bottom: 1rem;
 }
+.pub-heading-meta {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #555;
+}
+.pub-heading-meta a {
+  color: #52adc8;
+}
 .paper-box {
   display: flex;
   gap: 1rem;
