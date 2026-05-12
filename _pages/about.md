@@ -122,7 +122,7 @@ h2[id] {
   margin-bottom: 1rem;
 }
 .pub-heading-meta {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: normal;
   color: #555;
 }
