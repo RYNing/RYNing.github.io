@@ -157,7 +157,7 @@ h2[id] {
   color: #3f3f3f;
 }
 .paper-box .paper-authors {
-  font-size: 0.72rem !important;
+  font-size: 0.8rem !important;
   color: #555;
   line-height: 1.5;
 }
