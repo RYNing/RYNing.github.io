@@ -48,15 +48,16 @@ Research in Sunnyvale, CA.
     <p class="paper-desc">{{ post.description }}</p>
     {% endif %}
     <p class="paper-links">
-      <span class="pub-venue">{{ post.venue }}</span>
       {% if post.paperurl and post.paperurl != '' %}
-        &nbsp;<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">arXiv</a>
+        <a class="pub-venue" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.venue }}</a>
+      {% else %}
+        <span class="pub-venue">{{ post.venue }}</span>
       {% endif %}
       {% if post.projecturl and post.projecturl != '' %}
-        &nbsp;<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">project</a>
+        &nbsp;|&nbsp;<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">project</a>
       {% endif %}
       {% if post.codeurl and post.codeurl != '' %}
-        &nbsp;<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">code</a>
+        &nbsp;|&nbsp;<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">code</a>
       {% endif %}
     </p>
   </div>
@@ -167,7 +168,7 @@ h2[id] {
   color: #666;
   line-height: 1.5;
 }
-.paper-links { font-size: 0.85rem; color: #888; }
+.paper-box .paper-links { font-size: 0.72rem !important; color: #888; }
 .pub-venue { font-weight: 600; color: #52adc8; }
 .paper-links a {
   font-size: 0.8rem;
