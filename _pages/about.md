@@ -33,7 +33,8 @@ Research in Sunnyvale, CA.
   </span>
 </h2>
 
-{% for post in site.publications reversed %}
+{% assign sorted_pubs = site.publications | sort: 'sort_order' %}
+{% for post in sorted_pubs %}
 <div class="paper-box">
   <div class="paper-box-image">
     <img src="{{ '/images/' | append: post.teaser | default: '/images/paper-placeholder.svg' }}" alt="paper teaser">
