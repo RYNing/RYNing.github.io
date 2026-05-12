@@ -26,12 +26,12 @@ Research in Sunnyvale, CA.
   <span>Data Efficiency</span>
 </div>
 
-<h2 id="publications">Publications</h2>
-
-<p class="pub-note">
-  You can also find my publications on
-  <a href="{{ site.author.googlescholar }}">my Google Scholar</a>.
-</p>
+<h2 id="publications" class="pub-heading">📝 Selected Publications
+  <span class="pub-heading-meta">
+    | <a href="{{ site.author.googlescholar }}">See All Publications &gt;</a>
+    | *: Equal Contributions
+  </span>
+</h2>
 
 {% for post in site.publications reversed %}
 <div class="paper-box">

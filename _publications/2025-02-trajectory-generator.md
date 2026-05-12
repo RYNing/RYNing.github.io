@@ -5,5 +5,5 @@ permalink: /publication/2025-trajectory-generator
 date: 2025-06-01
 venue: "arXiv preprint"
 paperurl:
-citation: "<b>Ruining Yang</b>, Yi Xu, Yixiao Chen, Yun Fu, Lili Su,"
+citation: "<b>Ruining Yang</b><span style='color:#7a8288;'>, Yi Xu, Yixiao Chen, Yun Fu, Lili Su</span>"
 ---
