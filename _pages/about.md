@@ -28,20 +28,37 @@ Research in Sunnyvale, CA.
 
 <h2 id="publications">Publications</h2>
 
-You can also find my publications on
-<a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+<p class="pub-note">
+  You can also find my publications on
+  <a href="{{ site.author.googlescholar }}">my Google Scholar</a>.
+</p>
 
-<ol class="pub-list" reversed>
 {% for post in site.publications reversed %}
-  <li>
-    <span class="pub-title">{{ post.title }}</span><br>
-    <span class="pub-citation">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-    {% if post.paperurl and post.paperurl != '' %}
-      &nbsp;<a href="{{ post.paperurl }}" class="pub-link">[paper]</a>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <img src="{{ base_path }}/images/{{ post.teaser | default: 'paper-placeholder.svg' }}" alt="paper teaser">
+  </div>
+  <div class="paper-box-text">
+    <p class="paper-title">{{ post.title }}</p>
+    <p class="paper-authors">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% if post.description %}
+    <p class="paper-desc">{{ post.description }}</p>
     {% endif %}
-  </li>
+    <p class="paper-links">
+      <span class="paper-venue">{{ post.venue }}, {{ post.date | date: '%Y' }}</span>
+      {% if post.paperurl and post.paperurl != '' %}
+        &nbsp;|&nbsp;<a href="{{ post.paperurl }}">paper</a>
+      {% endif %}
+      {% if post.projecturl and post.projecturl != '' %}
+        &nbsp;|&nbsp;<a href="{{ post.projecturl }}">project</a>
+      {% endif %}
+      {% if post.codeurl and post.codeurl != '' %}
+        &nbsp;|&nbsp;<a href="{{ post.codeurl }}">code</a>
+      {% endif %}
+    </p>
+  </div>
+</div>
 {% endfor %}
-</ol>
 
 <h2 id="education">Education</h2>
 
@@ -96,22 +113,68 @@ h2[id] {
   color: #3f3f3f;
   line-height: 1.3;
 }
-.pub-list {
-  padding-left: 1.2rem;
-}
-.pub-list li {
-  padding: 0.5rem 0;
-  line-height: 1.6;
-}
-.pub-title {
-  font-weight: 600;
-}
-.pub-citation {
+.pub-note {
   font-size: 0.9rem;
   color: #555;
+  margin-bottom: 1rem;
 }
-.pub-link {
-  font-size: 0.8rem;
+.paper-box {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #efefef;
+  align-items: flex-start;
+}
+.paper-box:last-child {
+  border-bottom: none;
+}
+.paper-box-image {
+  flex: 0 0 180px;
+  max-width: 180px;
+}
+.paper-box-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  display: block;
+}
+.paper-box-text {
+  flex: 1;
+  min-width: 0;
+}
+.paper-box-text p {
+  margin: 0.25rem 0;
+}
+.paper-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+.paper-authors {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.5;
+}
+.paper-authors b {
+  color: #3f3f3f;
+}
+.paper-desc {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.5;
+}
+.paper-links {
+  font-size: 0.85rem;
+  color: #888;
+}
+.paper-venue {
+  color: #52adc8;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .paper-box { flex-direction: column; }
+  .paper-box-image { flex: unset; max-width: 100%; }
 }
 ul.timeline {
   list-style: none;
