@@ -6,5 +6,5 @@ date: 2026-03-01
 venue: "arXiv preprint"
 paperurl:
 sort_order: 1
-citation: "<span style='color:#7a8288;'>Zewei Zhou*, </span><b>Ruining Yang</b>*<span style='color:#7a8288;'>, Xuewei (Tony) Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma</span>"
+citation: "<span style='color:#7a8288;'>Zewei Zhou<sup>*</sup>, </span><b>Ruining Yang</b><sup>*</sup><span style='color:#7a8288;'>, Xuewei (Tony) Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma</span>"
 ---

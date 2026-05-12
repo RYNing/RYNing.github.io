@@ -43,7 +43,7 @@ Research in Sunnyvale, CA.
   </div>
   <div class="paper-box-text">
     <p class="paper-title">{{ post.title }}</p>
-    <p class="paper-authors">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <p class="paper-authors">{{ post.citation }}</p>
     {% if post.description %}
     <p class="paper-desc">{{ post.description }}</p>
     {% endif %}
