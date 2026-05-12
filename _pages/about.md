@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+<h2 id="about">About</h2>
+
 I am a PhD Candidate in Computer Engineering at Northeastern University,
 advised by Prof. [Lili Su](https://lilisu3.sites.northeastern.edu/). My
 research focuses on autonomous driving and data efficiency, with an
