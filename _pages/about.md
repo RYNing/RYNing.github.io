@@ -18,7 +18,7 @@ University. I have been a research intern at Motional working on
 autonomous driving, and I am currently a research intern at Bosch
 Research in Sunnyvale, CA.
 
-## Research Interests
+<h2 class="no-underline">Research Interests</h2>
 
 <div class="interest-tags">
   <span>Autonomous Driving</span>
@@ -27,6 +27,10 @@ Research in Sunnyvale, CA.
 </div>
 
 <style>
+h2.no-underline {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .interest-tags {
   display: flex;
   gap: 0.6rem;
