@@ -5,5 +5,5 @@ permalink: /publication/2026-spanvla
 date: 2026-03-01
 venue: "arXiv preprint"
 paperurl:
-citation: "Zewei Zhou*, <b>Ruining Yang</b>*, Xuewei (Tony) Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma,"
+citation: "<span style='color:#7a8288;'>Zewei Zhou*, </span><b>Ruining Yang</b>*<span style='color:#7a8288;'>, Xuewei (Tony) Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma</span>"
 ---
