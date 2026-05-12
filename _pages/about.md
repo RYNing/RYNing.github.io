@@ -18,4 +18,28 @@ University. I have been a research intern at Motional working on
 autonomous driving, and I am currently a research intern at Bosch
 Research in Sunnyvale, CA.
 
-**Research Interests:** Autonomous Driving · Data Efficiency · Trajectory Prediction
+## Research Interests
+
+<div class="interest-tags">
+  <span>Autonomous Driving</span>
+  <span>Data Efficiency</span>
+  <span>Trajectory Prediction</span>
+</div>
+
+<style>
+.interest-tags {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+.interest-tags span {
+  background: #f2f3f3;
+  border: 1px solid #e0e0e0;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #3f3f3f;
+  line-height: 1.3;
+}
+</style>
