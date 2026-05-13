@@ -94,6 +94,10 @@ Research in Sunnyvale, CA.
 </ul>
 
 <style>
+/* widen the main container on large screens */
+@media (min-width: 80em) {
+  #main { max-width: 1480px; }
+}
 h2.no-underline {
   border-bottom: none;
   padding-bottom: 0;
