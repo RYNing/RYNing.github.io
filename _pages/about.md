@@ -138,19 +138,25 @@ h2[id] {
   gap: 1rem;
   padding: 0.9rem 0;
   border-bottom: 1px solid #efefef;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .paper-box:last-child { border-bottom: none; }
 .paper-box-image {
-  flex: 0 0 180px;
-  max-width: 180px;
+  flex: 0 0 auto;
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .paper-box-image img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   display: block;
+  object-fit: contain;
 }
 .paper-box-text { flex: 1; min-width: 0; }
 .paper-box-text p { margin: 0.25rem 0; }
