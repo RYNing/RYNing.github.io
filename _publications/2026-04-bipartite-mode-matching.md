@@ -6,5 +6,6 @@ date: 2026-02-01
 venue: "AAAI 2026"
 paperurl: "https://arxiv.org/pdf/2601.09531"
 sort_order: 3
+teaser: bmm.png
 citation: "<span style='color:#7a8288;'>Yue Yao, </span><b>Ruining Yang</b><span style='color:#7a8288;'>, Tom Gedeon</span>"
 ---
