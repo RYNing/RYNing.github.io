@@ -54,10 +54,10 @@ Research in Sunnyvale, CA.
         <span class="pub-venue">{{ post.venue }}</span>
       {% endif %}
       {% if post.paperurl and post.paperurl != '' %}
-        &nbsp;|&nbsp;<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+        &nbsp;|&nbsp;<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/icon-paper.svg' | relative_url }}" alt="Paper" class="pub-icon"></a>
       {% endif %}
       {% if post.projecturl and post.projecturl != '' %}
-        &nbsp;|&nbsp;<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
+        &nbsp;|&nbsp;<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/icon-project.svg' | relative_url }}" alt="Project" class="pub-icon"></a>
       {% endif %}
       {% if post.coderepo and post.coderepo != '' %}
         &nbsp;|&nbsp;<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/{{ post.coderepo }}?style=social&label=Code%20Stars&logoColor=2c4a88" alt="Code Stars" class="stars-badge"></a>
@@ -172,7 +172,8 @@ h2[id] {
   line-height: 1.5;
 }
 .paper-box .paper-links { font-size: 0.72rem !important; color: #888; }
-.paper-box .paper-links .stars-badge { height: 18px; vertical-align: middle; margin-bottom: 2px; }
+.paper-box .paper-links .pub-icon { height: 21px; vertical-align: -30%; }
+.paper-box .paper-links .stars-badge { height: 20px; vertical-align: -30%; }
 .pub-venue { font-weight: 600; color: #52adc8; }
 .paper-links a {
   font-size: 0.8rem;
