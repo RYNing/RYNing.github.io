@@ -146,8 +146,8 @@ h2[id] {
 }
 .paper-box:last-child { border-bottom: none; }
 .paper-box-image {
-  flex: 0 0 220px;
-  max-width: 220px;
+  flex: 0 0 260px;
+  max-width: 260px;
   align-self: stretch;
   position: relative;
   overflow: hidden;
