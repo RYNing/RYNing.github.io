@@ -6,5 +6,6 @@ date: 2025-01-01
 venue: "Arxiv, 2025"
 paperurl: "https://arxiv.org/pdf/2506.03408"
 sort_order: 5
+teaser: llm-tp-survey.png
 citation: "<span style='color:#7a8288;'>Yi Xu, </span><b>Ruining Yang</b><span style='color:#7a8288;'>, Yitian Zhang, Jianglin Lu, Mingyuan Zhang, Yizhou Wang, Lili Su, Yun Fu</span>"
 ---
