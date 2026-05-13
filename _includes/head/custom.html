@@ -2,6 +2,12 @@
 
 <!-- start custom head snippets -->
 
+<!-- Force light theme (disable dark mode) -->
+<script>
+  localStorage.setItem("theme", "light");
+  document.documentElement.removeAttribute("data-theme");
+</script>
+
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
