@@ -9,16 +9,11 @@ redirect_from:
 
 <h2 id="about">About</h2>
 
-I am a PhD Candidate in Computer Engineering at Northeastern University,
-advised by Prof. [Lili Su](https://lilisu3.sites.northeastern.edu/). My
-research focuses on autonomous driving and data efficiency, with an
-emphasis on trajectory prediction, data curation, and scalable training
-for self-driving systems.
-
+Hihi, I am Ruining Yang (pronounce: ray-ning-young), a second year PhD in
+Computer Engineering at Northeastern University. I am fortunate to be
+advised by Prof. [Lili Su](https://lilisu3.sites.northeastern.edu/).
 Previously, I received my MS in Computer Science from Northeastern
-University. I have been a research intern at Motional working on
-autonomous driving, and I am currently a research intern at Bosch
-Research in Sunnyvale, CA.
+University, and BA in Communication from University of Colorado Denver.
 
 <h2 id="research-interests" class="no-underline">Research Interests</h2>
 
