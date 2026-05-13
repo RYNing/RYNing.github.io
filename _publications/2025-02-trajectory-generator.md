@@ -6,5 +6,6 @@ date: 2025-06-01
 venue: "Arxiv, 2025"
 paperurl: "https://arxiv.org/pdf/2510.02627"
 sort_order: 6
+teaser: traj-gen.png
 citation: "<b>Ruining Yang</b><span style='color:#7a8288;'>, Yi Xu, Yixiao Chen, Yun Fu, Lili Su</span>"
 ---
