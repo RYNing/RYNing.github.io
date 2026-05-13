@@ -95,9 +95,10 @@ for autonomous driving.
 </ul>
 
 <style>
-/* widen the main container on large screens */
+/* widen the main container on large screens, add more left breathing room */
+#main { padding-left: 3em; }
 @media (min-width: 80em) {
-  #main { max-width: 1380px; }
+  #main { max-width: 1380px; padding-left: 4em; }
 }
 h2.no-underline {
   border-bottom: none;
