@@ -15,6 +15,12 @@ advised by Prof. [Lili Su](https://lilisu3.sites.northeastern.edu/).
 Previously, I received my MS in Computer Science from Northeastern
 University, and BA in Communication from University of Colorado Denver.
 
+My research focuses on scalable and trustworthy foundation-model-based
+autonomous driving systems, with an emphasis on robust decision-making in
+complex real-world scenarios. Currently, I am investigating
+Vision-Language-Action (VLA) models and data-efficient learning strategies
+for autonomous driving.
+
 <h2 id="research-interests" class="no-underline">Research Interests</h2>
 
 <div class="interest-tags">
