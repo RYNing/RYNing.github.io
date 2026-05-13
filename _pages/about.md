@@ -146,21 +146,21 @@ h2[id] {
 }
 .paper-box:last-child { border-bottom: none; }
 .paper-box-image {
-  flex: 0 0 auto;
-  max-width: 45%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.paper-box-image img {
-  width: auto;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  flex: 0 0 220px;
+  max-width: 220px;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
-  display: block;
+}
+.paper-box-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  display: block;
 }
 .paper-box-text { flex: 1; min-width: 0; }
 .paper-box-text p { margin: 0.25rem 0; }
