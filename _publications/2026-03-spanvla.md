@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2026-spanvla
 date: 2026-03-01
 venue: "Arxiv, 2026"
-paperurl: "https://arxiv.org/abs/2604.19710"
+paperurl: "https://arxiv.org/pdf/2604.19710"
 projecturl: "https://spanvla.github.io/"
 codeurl: "https://github.com/motional/SpanVLA"
 coderepo: "motional/SpanVLA"
