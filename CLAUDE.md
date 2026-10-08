@@ -57,6 +57,12 @@ When adding a publication, set `date`, pick both a `sort_order` and an `all_orde
 - This site is kept visually in sync with the sibling repo `Bobchenyx/Bobchenyx.github.io` (same paper-box, venue badge, timeline-with-logos and author-mark conventions); shared papers and logos can be copied from there. It is not necessarily cloned locally — clone it next to this repo (`../Bobchenyx.github.io`) if needed. Unlike that repo, this one hardcodes light-theme colors instead of CSS variables.
 - Dark mode is disabled: the toggle was removed from `_includes/masthead.html` and `_includes/head/custom.html` forces the light theme.
 - Site search is off (`search: false`).
+- Mobile layout follows the sibling site's "Fix mobile layout of homepage" commit:
+  - The extra `#main` left padding in `page-styles.html` applies only at ≥64em; phones keep the theme's narrow gutter.
+  - Paper cards stack below 600px, with the teaser at full width.
+  - The footer is `position: absolute` at the end of the page, not fixed to the viewport (`_sass/layout/_footer.scss`).
+  - `.author__name` uses `word-break: keep-all` so "(杨蕊宁)" never splits.
+- To check phone widths, don't use headless Chrome's `--window-size`: the viewport never goes below 500px. Use DevTools device emulation instead (`Emulation.setDeviceMetricsOverride` with `mobile: true`, e.g. 390px).
 - Template leftovers that this site does not use: `talkmap*`, `scripts/` (CV JSON generation), `_data/cv.json`, and `.github/workflows/` (talk scraping and PR cleanup). Leave them alone unless asked.
 
 ## Conventions

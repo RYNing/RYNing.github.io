@@ -181,6 +181,8 @@
 
 .author__name {
   margin: 0;
+  /* don't break inside the Chinese name "(杨蕊宁)" when it wraps on phones */
+  word-break: keep-all;
 
   @include breakpoint($large) {
     margin-top: 10px;
