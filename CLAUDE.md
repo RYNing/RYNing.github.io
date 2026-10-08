@@ -23,11 +23,7 @@ Changes to `_config.yml` require restarting `jekyll serve`. Deployment is automa
 
 ## Architecture: where the real site lives
 
-The site has three hand-written pages in `_pages/`. The top nav (`_data/navigation.yml`) has Home (`/`), Experience and Publications; Education is deliberately not in the nav. `_includes/masthead.html` never highlights a nav item that links to `/`, so on the home page the site title "Ruining Yang" is highlighted instead of Home. On phones (<600px, rules at the end of the masthead section in `_sass/layout/_masthead.scss`):
-- The Home item is hidden.
-- The site title reads "Ruining Yang (Home)" on every page except the home page.
-- Nav text is 15px with tighter gaps, so Experience and Publications both fit down to 360px wide.
-- The greedy-nav hamburger button starts with `class="hidden"`. Otherwise the script reserves room for the button on load and folds Publications into the menu.
+The site has three hand-written pages in `_pages/`. The top nav (`_data/navigation.yml`) has Home (`/`), Experience and Publications; Education is deliberately not in the nav. `_includes/masthead.html` never highlights a nav item that links to `/`, so on the home page the site title "Ruining Yang" is highlighted instead of Home.
 - `about.md` (permalink `/`, the home page): About, Education, Experience, then Selected Publications — in that order, mirroring the sibling site. Education is written inline here and has no page of its own. Selected Publications is a loop over publications that are not `selected: false`, ordered by `sort_order`; the "See All Publications >" link in its heading goes to `/publications/`.
 - `experience.md` (`/experience/`): the same timeline as the home page's Experience section, plus each internship's supervisors and work. Both render `_includes/experience.html`, so edit entries there, not in the pages. The page passes `details=true` to show the `timeline-desc` lines. The home page leaves them out and instead shows a "More Details >" link to `/experience/` in the heading, styled like "See All Publications >". The About text does not mention internships, which live only here. Below the timeline, `experience.md` itself holds an Academic Service section that appears only on this page, with "As an Organizer" and "As a Reviewer" lists, newest first.
 - `publications.md` (`/publications/`): every publication, ordered by `all_order`.
