@@ -1,5 +1,5 @@
 ---
-title: "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model"
+title: "SpanVLA: Learning from Negative-Recovery Samples with Fast Action Bridging for Vision-Language-Action Model"
 collection: publications
 permalink: /publication/2026-spanvla
 date: 2026-03-01
