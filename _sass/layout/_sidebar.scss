@@ -322,3 +322,30 @@
     }
   }
 }
+
+/* Research interests tags under the author links */
+.author__interests {
+  margin-top: 1em;
+
+  .author__interests-title {
+    margin: 0 0 0.5em;
+    font-size: $type-size-6;
+    font-weight: bold;
+  }
+}
+
+.author__interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  span {
+    background: #f2f3f3;
+    border: 1px solid #e0e0e0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: $type-size-7;
+    color: #3f3f3f;
+    line-height: 1.3;
+  }
+}

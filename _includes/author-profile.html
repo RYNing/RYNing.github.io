@@ -173,4 +173,13 @@
       {% endif %}      
     </ul>
   </div>
+
+  {% if author.interests %}
+  <div class="author__interests">
+    <h4 class="author__interests-title">Research Interests</h4>
+    <div class="author__interest-tags">
+      {% for interest in author.interests %}<span>{{ interest }}</span>{% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </div>
