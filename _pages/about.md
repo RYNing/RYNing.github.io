@@ -9,12 +9,24 @@ redirect_from:
 <h2 id="about">About</h2>
 
 Hihi, I am Ruining Yang (pronounce: ray-ning-young), a third year PhD in
-Computer Engineering at Northeastern University. I am fortunate to be
+Computer Engineering at [TRUST AI Lab](https://lilisu3.sites.northeastern.edu/),
+<span class="nowrap"><img class="inline-logo" src="{{ '/images/logos/northeastern.jpeg' | relative_url }}" alt="Northeastern">Northeastern</span> University. I am fortunate to be
 advised by Prof. [Lili Su](https://lilisu3.sites.northeastern.edu/).
 My research focuses on efficient learning from informative samples for
 End-to-End, Vision-Language-Action (VLA), and World Action Model (WAM)
 approaches in autonomous driving, with an emphasis
 on robust decision-making in complex real-world scenarios.
+
+I was fortunate to intern at
+<span class="nowrap"><img class="inline-logo" src="{{ '/images/logos/motional.jpeg' | relative_url }}" alt="Motional">Motional</span>, supervised by
+[Yiluan Guo](https://scholar.google.com/citations?user=iQx57VIAAAAJ&hl=en) and
+[Tony (Xuewei) Qi](https://scholar.google.com/citations?user=pOA6uKMAAAAJ&hl=en),
+working on VLA training with negative-recovery samples and long-tail reasoning
+datasets. I am currently interning at
+<span class="nowrap"><img class="inline-logo" src="{{ '/images/logos/bosch.svg' | relative_url }}" alt="Bosch">Bosch</span> Center for Artificial Intelligence (BCAI), supervised by
+[Yi Xu](https://colorfulfuture.github.io/) and
+[Can Cui](https://cancui19.github.io/), working on RL post-training for VLA
+and WAM models.
 
 <h2 id="education">Education</h2>
 
@@ -41,7 +53,7 @@ on robust decision-making in complex real-world scenarios.
   <li>
     <img class="timeline-logo" src="{{ '/images/logos/bosch.svg' | relative_url }}" alt="Bosch logo">
     <div>
-      <strong>Research Intern</strong>, Bosch Research
+      <strong>Research Intern</strong>, Bosch Center for Artificial Intelligence (BCAI)
       <span class="timeline-meta">05/2026 – Present · Sunnyvale, CA</span>
     </div>
   </li>
@@ -239,6 +251,18 @@ ul.timeline.with-logos li {
   display: flex;
   align-items: center;
   gap: 0.9rem;
+}
+.nowrap { white-space: nowrap; }
+/* small logo inline before an organization name in running text */
+img.inline-logo {
+  display: inline;
+  height: 1.15em;
+  width: auto;
+  max-width: 2.6em;
+  object-fit: contain;
+  vertical-align: -0.2em;
+  margin-right: 0.28em;
+  border-radius: 2px;
 }
 .timeline-logo {
   flex: 0 0 44px;

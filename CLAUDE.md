@@ -46,6 +46,7 @@ When adding a publication, pick a `sort_order` and renumber others as needed so 
 ### Other customizations
 
 - Education/Experience entries use `<ul class="timeline with-logos">` with a 44px square logo from `images/logos/`.
+- Organization names in the About text are plain text (no link) with a small logo in front (`img.inline-logo`, the style used on cancui19.github.io). The logo and the first word are wrapped in `<span class="nowrap">` so the logo never ends a line by itself.
 - This site is kept visually in sync with the sibling repo `../Bobchenyx.github.io` (same paper-box, venue badge, timeline-with-logos and author-mark conventions); shared papers and logos can be copied from there. Unlike that repo, this one hardcodes light-theme colors instead of CSS variables.
 - Dark mode is disabled: the toggle was removed from `_includes/masthead.html` and `_includes/head/custom.html` forces the light theme.
 - Site search is off (`search: false`).
