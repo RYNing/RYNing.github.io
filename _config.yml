@@ -118,12 +118,13 @@ author:
   email            : "yang.ruini@northeastern.edu"
   researchgate     :
   github           : "RYNing"
-  linkedin         :
+  linkedin         : "ruining-yang"
   twitter          :
   impactstory      :
   orcid            :
   wikipedia        :
   interests        :
-    - Autonomous Driving
     - Vision-Language-Action Models
+    - World Action Models
+    - Post-Training in Autonomous Driving
     - Data Efficiency
