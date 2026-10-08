@@ -74,6 +74,29 @@
   cursor: default; /* Move this here too */
 }
 
+/* "(Home)" after the site title on pages other than the home page; phones only */
+.masthead__home-hint {
+  display: none;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+/* phones: drop the Home item (the "(Home)" title does its job) and tighten the
+   spacing so Experience and Publications both fit next to the title */
+@media (max-width: 37.5em) {
+  #site-nav .masthead__menu-item--home { display: none; }
+  #site-nav .masthead__home-hint { display: inline; }
+  #site-nav .visible-links .masthead__menu-item--lg {
+    padding-right: 0.25em;
+    white-space: nowrap;
+    text-wrap: nowrap;
+  }
+  /* 15px text and tighter gaps: fits down to 360px-wide phones */
+  #site-nav .visible-links a { margin: 0 0.3rem; font-size: 0.9375rem; }
+  #site-nav .visible-links li:first-child a { margin-left: 0; }
+  #site-nav .visible-links li:last-child a { margin-right: 0; }
+}
+
 .masthead__menu-item.selected a:hover {
   color: var(--global-text-color);
   border-bottom: 2px solid var(--global-text-color);
