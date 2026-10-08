@@ -1,0 +1,41 @@
+<h2 id="experience">Experience{% unless include.details %}
+  <span class="pub-heading-meta">
+    | <a href="{{ '/experience/' | relative_url }}">More Details &gt;</a>
+  </span>{% endunless %}
+</h2>
+
+<ul class="timeline with-logos">
+  <li>
+    <img class="timeline-logo" src="{{ '/images/logos/bosch.svg' | relative_url }}" alt="Bosch logo">
+    <div>
+      <strong>Research Intern</strong>, Bosch Center for Artificial Intelligence (BCAI)
+      <span class="timeline-meta">05/2026 – Present · Sunnyvale, CA</span>
+      {% if include.details %}
+      <span class="timeline-desc">Supervised by <a href="https://colorfulfuture.github.io/">Yi Xu</a> and <a href="https://cancui19.github.io/">Can Cui</a></span>
+      <span class="timeline-desc">Working on RL post-training for VLA and WAM models.</span>
+      {% endif %}
+    </div>
+  </li>
+  <li>
+    <img class="timeline-logo" src="{{ '/images/logos/motional.jpeg' | relative_url }}" alt="Motional logo">
+    <div>
+      <strong>Research Intern</strong>, Motional
+      <span class="timeline-meta">09/2025 – 05/2026 · Boston, MA</span>
+      {% if include.details %}
+      <span class="timeline-desc">Supervised by <a href="https://scholar.google.com/citations?user=iQx57VIAAAAJ&hl=en">Yiluan Guo</a> and <a href="https://scholar.google.com/citations?user=pOA6uKMAAAAJ&hl=en">Tony (Xuewei) Qi</a></span>
+      <span class="timeline-desc">Worked on VLA training with negative-recovery samples and long-tail reasoning datasets.</span>
+      {% endif %}
+    </div>
+  </li>
+  <li>
+    <img class="timeline-logo" src="{{ '/images/logos/anu.png' | relative_url }}" alt="Australian National University logo">
+    <div>
+      <strong>Research Assistant</strong>, Australian National University
+      <span class="timeline-meta">05/2023 – 12/2023 · Canberra, Australia</span>
+      {% if include.details %}
+      <span class="timeline-desc">Supervised by <a href="https://zheng-lab-anu.github.io/">Liang Zheng</a> and <a href="http://yorkeyao.cc/">Yue Yao</a></span>
+      <span class="timeline-desc">Worked on training set search and built the <a href="https://github.com/yorkeyao/DataCV2024">Region100 benchmark</a>.</span>
+      {% endif %}
+    </div>
+  </li>
+</ul>

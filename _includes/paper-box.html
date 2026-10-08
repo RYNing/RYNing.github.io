@@ -1,0 +1,31 @@
+{% assign pub = include.pub %}
+<div class="paper-box">
+  <div class="paper-box-image">
+    <img src="{{ pub.teaser | default: 'paper-placeholder.svg' | prepend: '/images/' }}" alt="paper teaser">
+  </div>
+  <div class="paper-box-text">
+    <p class="paper-title">{{ pub.title }}</p>
+    <p class="paper-authors">{{ pub.citation }}</p>
+    {% if pub.award %}
+    <p class="paper-award">{{ pub.award }}</p>
+    {% endif %}
+    {% if pub.highlight %}
+    <p class="paper-highlight">{{ pub.highlight }}</p>
+    {% endif %}
+    {% if pub.description %}
+    <p class="paper-desc">{{ pub.description }}</p>
+    {% endif %}
+    <p class="paper-links">
+      <span class="pub-venue">{{ pub.venue }}</span>
+      {% if pub.paperurl and pub.paperurl != '' %}
+        &nbsp;|&nbsp;<a class="pub-text-link" href="{{ pub.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+      {% endif %}
+      {% if pub.projecturl and pub.projecturl != '' %}
+        &nbsp;|&nbsp;<a class="pub-text-link" href="{{ pub.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
+      {% endif %}
+      {% if pub.coderepo and pub.coderepo != '' %}
+        &nbsp;|&nbsp;<a href="{{ pub.codeurl }}" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/{{ pub.coderepo }}?style=social&label=Code%20Stars&logoColor=2c4a88" alt="Code Stars" class="stars-badge"></a>
+      {% endif %}
+    </p>
+  </div>
+</div>
