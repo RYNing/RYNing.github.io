@@ -4,7 +4,6 @@ collection: publications
 permalink: /publication/2026-drivebeyond
 date: 2026-11-06
 venue: "Arxiv, 2026"
-paperurl: "/files/drivebeyond.pdf"
 sort_order: 5
 all_order: 5
 teaser: drivebeyond.png
